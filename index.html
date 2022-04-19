@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <form action="/search.html" id="form">
+      <input
+        name="query"
+        class="form-input"
+        type="text"
+        placeholder="Search movies...."
+      />
+      <button class="form-btn">Search</button>
+    </form>
     <div id="wrapper-cards"></div>
-    
+
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script>dayjs().format()</script>
+    <script>
+      dayjs().format()
+    </script>
     <script type="module" src="./js/router.js"></script>
-</body>
+  </body>
 </html>

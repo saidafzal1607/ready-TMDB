@@ -1,0 +1,18 @@
+
+.detail-img{
+    height: 475px;
+    border-radius: 15px;
+    width: 300px;
+}
+
+#actors{
+    overflow-x: scroll;
+    display: flex;
+    column-gap: 20px;
+}
+
+.actors-img{
+    border-radius: 15px;
+    width: 150px;
+    height: 225px;
+}
