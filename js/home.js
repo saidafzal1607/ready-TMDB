@@ -4,7 +4,7 @@ const {API_KEY, URL , URL_IMG} = configs;
 
 export async function getPopularTVMovies(){
     const res = await fetch(`${URL}tv/popular?api_key=${API_KEY}&language=en-US&page=1`);
-    const data = res.json();
+    const data =await res.json();
     return data
 }
 
@@ -14,7 +14,6 @@ export function showPopularMovies(data){
     let html = '';
     results.forEach(movie => {
         const {poster_path, name, id , first_air_date} = movie;
-        // console.log(movie)
         html += `
         <div data-id="${id}" class="card">
             <img class="card-img" src="${URL_IMG}${poster_path}" alt="" />
